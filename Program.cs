@@ -34,44 +34,38 @@ namespace test
             }
 
         }
-
-                static void Main(string[] args)
+              static void Main(string[] args)
                 {
                 try
                 {
                     int big = Biggest();
-                        Console.WriteLine("Наибольшее число " + big);
+                    Console.WriteLine("Наибольшее число " + big);
 
-                        int x = big % 2;
-                        switch (x)
-                        {
-                            case 0:
-                                Console.WriteLine("Число четное");
-                                break;
-                            default:
-                                Console.WriteLine("Число нечетное");
-                                break;
-                        }
-
-                        bool r = (big < 100);
-                        if (r)
-                            Console.WriteLine("Число меньше 100");
-
-                        else
-                        {
-                            Console.WriteLine("Число меньше  100");
-                        }
-
-
+                    int x = big % 2;
+                    switch (x)
+                    {
+                    case 0:
+                    Console.WriteLine("Число четное");
+                     break;
+                     default:
+                     Console.WriteLine("Число нечетное");
+                      break;
+                     }
+                     bool r = (big < 100);
+                     if (r)
+                     Console.WriteLine("Число меньше 100");
+                     else
+                     {
+                      Console.WriteLine("Число меньше  100");
+                    }
                     }
                     catch
                     {
-                        Console.WriteLine("Нет, введите число");
-                       Biggest();
+                    Console.WriteLine("Нет, введите число");
+                    Biggest();
                     }
 
-
-                    Console.ReadKey();
+                   Console.ReadKey();
                 }
             }
 }
